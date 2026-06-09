@@ -38,6 +38,7 @@ export default function Login() {
 
       <TextInput
         style={styles.input}
+        keyboardType='email'
         placeholder="Email"
       />
 
