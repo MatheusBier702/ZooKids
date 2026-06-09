@@ -1,68 +1,53 @@
-import { StatusBar } from 'expo-status-bar';
-import { View, Text,  Pressable, ScrollView, ImageBackground,} from 'react-native';
-import styles from './styles';
-import { useNavigation } from '@react-navigation/native';
+import React from "react";
+import { View, Text, Pressable } from "react-native";
+import styles from "./styles";
 
-export default function Home() {
-const territorios = [
-    {
-      nome: "Floresta",
-      imagem:"./assets/Floresta.webp",
-      tela: "Floresta",
-    },
-
-    {
-      nome: "Oceano",
-      imagem: "./assets/Oceano.webp",
-      tela: "Oceano",
-    },
-
-    {
-      nome: "Deserto",
-      imagem: "./assets/Deserto.webp",
-      tela: "Deserto",
-    },
-
-    {
-      nome: "Savana",
-      imagem: "./assets/Savana.webp",
-      tela: "Savana",
-    },
-
-    {
-      nome: "Ártico",
-      imagem: "./assets/Artico.webp",
-      tela: "Artico",
-    },
-
-    {
-      nome: "Jurassic",
-      imagem: "./assets/Jurassic.webp",
-      tela: "Jurassic",
-    },
-  ];
-
-  const navigation = useNavigation();
-
+export default function Home({ navigation }) {
   return (
-    <ScrollView style={styles.container}>
-      <Text style={styles.titulo}>
-        Zoo Kids
-      </Text>
+    <View style={styles.container}>
+      <Text style={styles.titulo}>🐾 ZooKids</Text>
 
-      <Text style={styles.subtitulo}>
-        Escolha um território
-      </Text>
-{
-  territorios.map((territorio, index) => (
-    <Pressable key={index} style={styles.card}>
-      <Text>
-        {territorio.nome}
-      </Text>
-    </Pressable>
-  ))
-}
-    </ScrollView>
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Floresta")}
+      >
+        <Text style={styles.texto}>🌳 Floresta</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Oceano")}
+      >
+        <Text style={styles.texto}>🌊 Oceano</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Deserto")}
+      >
+        <Text style={styles.texto}>🏜️ Deserto</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Savana")}
+      >
+        <Text style={styles.texto}>🦁 Savana</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Artico")}
+      >
+        <Text style={styles.texto}>❄️ Ártico</Text>
+      </Pressable>
+
+      <Pressable
+        style={styles.card}
+        onPress={() => navigation.navigate("Jurassic")}
+      >
+        <Text style={styles.texto}>🦖 Jurassic</Text>
+      </Pressable>
+    </View>
   );
 }
-//Nao aguento mais :(
