@@ -13,7 +13,7 @@ export default function Floresta() {
     },
      {
     id: "2",
-    nome: "Arara",
+    nome: "anta",
     descricao: "...",
   },
   {

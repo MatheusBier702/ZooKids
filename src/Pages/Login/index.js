@@ -10,13 +10,53 @@ import {
 import styles from './styles';
 
 import { useNavigation } from '@react-navigation/native';
+import React from 'react';
+
+
+
+const types = {
+  email: {
+    name: 'email',
+    regex: true, 
+    message: "Email Inválido"
+  }, 
+  nome: {
+    name: 'name',
+    regex: true, 
+    message: "Nome Inválido"
+  }, 
+  idade: {
+    name: 'number',
+    regex: true, 
+    message: "Idade Inválido"
+  }, 
+
+}
 
 export default function Login() {
 
   const navigation = useNavigation();
+  const [validate, setValidate] = React.useState(false)
+  const [value, setValue] = React.useState('')
+
+  function handleValidate() {
+    setValidate(true)
+    if(validate) {
+      return navigation.navigate('Home')
+    }
+  }
+
+  console.log(value)
+  // function handleClick() {
+  //   console.log("entrou")
+    
+  //   handleValidate()
+  // }
 
   return (
     <View style={styles.container}>
+
+      {}
 
       <Text style={styles.title}>
         Zoo Kids
@@ -27,12 +67,15 @@ export default function Login() {
       </Text>
 
       <TextInput
+        
         style={styles.input}
         placeholder="Nome"
+        onChange={({target}) => setValue(target.value)}
       />
-
+        
       <TextInput
         style={styles.input}
+
         placeholder="Idade"
       />
 
@@ -42,9 +85,10 @@ export default function Login() {
         placeholder="Email"
       />
 
+  
       <Pressable
         style={styles.button}
-        onPress={() => navigation.navigate('Home')}
+        onPress={handleValidate}
       >
         <Text style={styles.buttonText}>
           Entrar
