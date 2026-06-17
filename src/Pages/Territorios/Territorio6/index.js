@@ -2,35 +2,44 @@ import React, { useState } from "react";
 import {View, Text, FlatList, Pressable, Modal, StyleSheet,} from "react-native";
 import styles from "./styles";
 
-export default function Floresta() {
+export default function Territorio6() {
   const [animalSelecionado, setAnimalSelecionado] = useState(null);
 
   const animais = [
     {
       id: "1",
-      nome: "Leão",
-      descricao: "...",
+      nome: "Chimpanzé",
+      descricao:
+        "O urso polar vive nas regiões geladas do Ártico e é um excelente nadador.",
+      //imagem: require("../../../assets/urso-polar.png"),
     },
-     {
-    id: "2",
-    nome: "Girafa",
-    descricao: "...",
-  },
-  {
-    id: "3",
-    nome: "Zebra",
-    descricao: "...",
-  },
-  {
-    id: "4",
-    nome: "Elefante",
-    descricao: "...",
-  }
+    {
+      id: "2",
+      nome: "Orangotango",
+      descricao:
+        "As focas passam boa parte da vida na água e conseguem suportar temperaturas muito baixas.",
+      //imagem: require("../../../assets/foca.png"),
+    },
+    {
+      id: "3",
+      nome: "Primatas Brasileiros",
+      descricao:
+        "A morsa possui grandes presas e utiliza seus bigodes para encontrar alimento.",
+      //imagem: require("../../../assets/morsa.png"),
+    },
+    {
+      id: "4",
+      nome: "Muriqui Do Sul",
+      descricao:
+        "A coruja-das-neves possui penas brancas que ajudam na camuflagem.",
+      //imagem: require("../../../assets/coruja-neve.png"),
+    },
+   
   ];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Floresta</Text>
+      <Text style={styles.titulo}>Territorio 6</Text>
 
       <FlatList
         data={animais}

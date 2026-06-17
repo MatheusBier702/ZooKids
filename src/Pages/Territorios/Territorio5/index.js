@@ -2,35 +2,50 @@ import React, { useState } from "react";
 import {View, Text, FlatList, Pressable, Modal, StyleSheet,} from "react-native";
 import styles from "./styles";
 
-export default function Floresta() {
+export default function Territorio5() {
   const [animalSelecionado, setAnimalSelecionado] = useState(null);
 
   const animais = [
     {
       id: "1",
-      nome: "Urso Polar",
-      descricao: "...",
+      nome: "Águias",
+      descricao:
+        "O urso polar vive nas regiões geladas do Ártico e é um excelente nadador.",
+      //imagem: require("../../../assets/urso-polar.png"),
     },
-     {
-    id: "2",
-    nome: "Foca",
-    descricao: "...",
-  },
-  {
-    id: "3",
-    nome: "Morsa",
-    descricao: "...",
-  },
-  {
-    id: "4",
-    nome: "Coruja-das-neves",
-    descricao: "...",
-  }
+    {
+      id: "2",
+      nome: "Gaviões",
+      descricao:
+        "As focas passam boa parte da vida na água e conseguem suportar temperaturas muito baixas.",
+      //imagem: require("../../../assets/foca.png"),
+    },
+    {
+      id: "3",
+      nome: "Harpia",
+      descricao:
+        "A morsa possui grandes presas e utiliza seus bigodes para encontrar alimento.",
+      //imagem: require("../../../assets/morsa.png"),
+    },
+    {
+      id: "4",
+      nome: "Condor",
+      descricao:
+        "A coruja-das-neves possui penas brancas que ajudam na camuflagem.",
+      //imagem: require("../../../assets/coruja-neve.png"),
+    },
+    {
+      id: "6",
+      nome: "Urubu-Rei",
+      descricao:
+        "A coruja-das-neves possui penas brancas que ajudam na camuflagem.",
+      //imagem: require("../../../assets/coruja-neve.png"),
+    },
   ];
 
   return (
     <View style={styles.container}>
-      <Text style={styles.titulo}>Floresta</Text>
+      <Text style={styles.titulo}>Territorio 5</Text>
 
       <FlatList
         data={animais}
