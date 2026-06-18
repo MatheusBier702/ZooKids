@@ -13,42 +13,44 @@ const territorios = [
     id: "1",
     nome: "Territorio 1",
     tela: "Territorio 1",
-    imagem: require("../../../assets/Floresta.webp"),
+    imagem: require("../../../assets/t1.png"),
   },
   {
     id: "2",
     nome: "Territorio 2",
     tela: "Territorio 2",
-    imagem: require("../../../assets/Oceano.webp"),
+    imagem: require("../../../assets/t2.png"),
   },
   {
     id: "3",
     nome: "Territorio 3",
     tela: "Territorio 3",
-    imagem: require("../../../assets/Deserto.webp"),
+    imagem: require("../../../assets/t3.png"),
   },
   {
     id: "4",
     nome: "Territorio 4",
     tela: "Territorio 4",
-    imagem: require("../../../assets/Savana.webp"),
+    imagem: require("../../../assets/t4.png"),
   },
   {
     id: "5",
     nome: "Territorio 5",
     tela: "Territorio 5",
-    imagem: require("../../../assets/Artico.webp"),
+    imagem: require("../../../assets/t5.png"),
   },
   {
     id: "6",
     nome: "Territorio 6",
     tela: "Territorio 6",
-    imagem: require("../../../assets/Jurassic.webp"),
+    imagem: require("../../../assets/t6.png"),
   },
 ];
 
+
 export default function Home({ navigation }) {
   return (
+    
     <View style={styles.container}>
       <Text style={styles.titulo}>ZooKids</Text>
 

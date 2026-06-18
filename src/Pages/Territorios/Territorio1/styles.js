@@ -92,7 +92,7 @@ export default StyleSheet.create({
   modalTexto: {
     fontSize: 16,
     color: "#444",
-    textAlign: "center",
+    
     lineHeight: 24,
     marginBottom: 20,
   },

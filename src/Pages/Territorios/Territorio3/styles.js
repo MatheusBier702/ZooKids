@@ -1,9 +1,9 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E8F5E9",
+    backgroundColor: "#F3FFF0",
     padding: 16,
   },
 
@@ -11,13 +11,13 @@ const styles = StyleSheet.create({
     fontSize: 32,
     fontWeight: "bold",
     textAlign: "center",
-    color: "#2E7D32",
+    color: "#14532D",
     marginBottom: 20,
     marginTop: 10,
   },
 
   card: {
-    backgroundColor: "#FFF",
+    backgroundColor: "#FFFFFF",
     borderRadius: 20,
     overflow: "hidden",
     marginBottom: 20,
@@ -46,20 +46,20 @@ const styles = StyleSheet.create({
   nome: {
     fontSize: 22,
     fontWeight: "bold",
-    color: "#2E7D32",
+    color: "#14532D",
   },
 
   modalContainer: {
     flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
     padding: 20,
   },
 
   modal: {
     width: "100%",
-    backgroundColor: "#FFF",
+    backgroundColor: "#FFFFFF",
     borderRadius: 25,
     padding: 20,
     alignItems: "center",
@@ -84,7 +84,7 @@ const styles = StyleSheet.create({
   modalTitulo: {
     fontSize: 26,
     fontWeight: "bold",
-    color: "#2E7D32",
+    color: "#14532D",
     marginBottom: 10,
     textAlign: "center",
   },
@@ -92,23 +92,21 @@ const styles = StyleSheet.create({
   modalTexto: {
     fontSize: 16,
     color: "#444",
-    textAlign: "center",
+    
     lineHeight: 24,
     marginBottom: 20,
   },
 
   botao: {
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#7ED957",
     paddingVertical: 12,
     paddingHorizontal: 35,
     borderRadius: 15,
   },
 
   botaoTexto: {
-    color: "#FFF",
+    color: "#FFFFFF",
     fontSize: 16,
     fontWeight: "bold",
   },
 });
-
-export default styles;

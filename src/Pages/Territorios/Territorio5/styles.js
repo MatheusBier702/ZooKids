@@ -1,86 +1,112 @@
 import { StyleSheet } from "react-native";
 
-const styles = StyleSheet.create({
+export default StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: "#E8F5E9",
-    padding: 20,
+    backgroundColor: "#F3FFF0",
+    padding: 16,
   },
 
   titulo: {
     fontSize: 32,
     fontWeight: "bold",
     textAlign: "center",
-    marginBottom: 25,
-    color: "#2E7D32",
+    color: "#14532D",
+    marginBottom: 20,
+    marginTop: 10,
   },
 
   card: {
-    backgroundColor: "#4CAF50",
-    padding: 20,
-    borderRadius: 15,
-    marginBottom: 15,
+    backgroundColor: "#FFFFFF",
+    borderRadius: 20,
+    overflow: "hidden",
+    marginBottom: 20,
 
     shadowColor: "#000",
     shadowOffset: {
       width: 0,
-      height: 3,
+      height: 4,
     },
-    shadowOpacity: 0.2,
-    shadowRadius: 4,
+    shadowOpacity: 0.15,
+    shadowRadius: 6,
 
-    elevation: 5,
+    elevation: 6,
+  },
+
+  imagem: {
+    width: "100%",
+    height: 200,
+  },
+
+  info: {
+    padding: 15,
+    alignItems: "center",
   },
 
   nome: {
-    color: "#FFF",
-    fontSize: 20,
+    fontSize: 22,
     fontWeight: "bold",
-    textAlign: "center",
+    color: "#14532D",
   },
 
   modalContainer: {
     flex: 1,
+    backgroundColor: "rgba(0,0,0,0.5)",
     justifyContent: "center",
     alignItems: "center",
-    backgroundColor: "rgba(0,0,0,0.5)",
+    padding: 20,
   },
 
   modal: {
-    width: "85%",
-    backgroundColor: "#FFF",
-    borderRadius: 20,
-    padding: 25,
+    width: "100%",
+    backgroundColor: "#FFFFFF",
+    borderRadius: 25,
+    padding: 20,
     alignItems: "center",
+
+    shadowColor: "#000",
+    shadowOffset: {
+      width: 0,
+      height: 5,
+    },
+    shadowOpacity: 0.2,
+    shadowRadius: 10,
+
+    elevation: 10,
+  },
+
+  modalImagem: {
+    width: 250,
+    height: 250,
+    marginBottom: 15,
   },
 
   modalTitulo: {
-    fontSize: 28,
+    fontSize: 26,
     fontWeight: "bold",
-    marginBottom: 15,
-    color: "#2E7D32",
+    color: "#14532D",
+    marginBottom: 10,
+    textAlign: "center",
   },
 
   modalTexto: {
     fontSize: 16,
-    textAlign: "center",
-    lineHeight: 24,
     color: "#444",
+   
+    lineHeight: 24,
+    marginBottom: 20,
   },
 
   botao: {
-    backgroundColor: "#4CAF50",
+    backgroundColor: "#7ED957",
     paddingVertical: 12,
-    paddingHorizontal: 25,
-    borderRadius: 10,
-    marginTop: 20,
+    paddingHorizontal: 35,
+    borderRadius: 15,
   },
 
   botaoTexto: {
-    color: "#FFF",
-    fontWeight: "bold",
+    color: "#FFFFFF",
     fontSize: 16,
+    fontWeight: "bold",
   },
 });
-
-export default styles;
